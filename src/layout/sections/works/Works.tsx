@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {FlexContainer} from "../../../components/FlexContainer";
 import {Menu} from "../../../components/menu/Menu";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {Work} from "./work/work";
+import {Work} from "./work/Work";
 import socialPhoto from '../../../assets/images/socialNetwork.jpg'
 import timerPhoto from '../../../assets/images/timer.png'
 const items = ['All', 'Landing page', 'React', 'SPA']
