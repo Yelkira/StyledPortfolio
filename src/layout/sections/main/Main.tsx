@@ -18,7 +18,7 @@ export const Main = () => {
     );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
   min-height: 100vh;
   background-color: #99ec3f;
 `
@@ -28,8 +28,6 @@ const Photo = styled.img`
   height: 430px;
 `
 const MainTitle = styled.h1`
-  color: green;
 `
 const Name = styled.h2`
-  color: #040080;
 `
