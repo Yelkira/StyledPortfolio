@@ -28,7 +28,7 @@ const StyledSkill = styled.div`
   width: 380px;
   padding: 62px 20px 40px;
 `
-const IconWrapper = styled.div`
+export const IconWrapper = styled.div`
   position: relative;
   z-index: 1;
 

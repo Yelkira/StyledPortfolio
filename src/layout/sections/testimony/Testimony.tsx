@@ -4,13 +4,16 @@ import {QuotesIcon} from "../../../assets/icons/iconQuotes";
 import {FlexContainer} from "../../../components/FlexContainer";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Slider} from "../../../components/slider/slider";
+import {IconWrapper} from "../skills/skill/Skill";
 
 export const Testimony = () => {
     return (
         <StyledTestimony>
             <SectionTitle>Testimony</SectionTitle>
             <FlexContainer direction={'column'} align={'center'}>
-                <QuotesIcon/>
+                <IconWrapper>
+                    <QuotesIcon/>
+                </IconWrapper>
                 <Slider/>
             </FlexContainer>
         </StyledTestimony>
@@ -20,4 +23,8 @@ export const Testimony = () => {
 const StyledTestimony = styled.section`
   background-color: #6a9bf5;
   min-height: 50vh;
+  
+  ${IconWrapper}{
+    margin: 40px 0 72px;
+  }
 `
