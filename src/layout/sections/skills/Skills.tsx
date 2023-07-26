@@ -14,7 +14,7 @@ export const Skills = () => {
                 <SectionTitle>
                     My skills
                 </SectionTitle>
-                <FlexContainer wrap={'wrap'}>
+                <FlexContainer wrap={'wrap'} justify={'space-between'}>
                     <Skill Icon={<HtmlIcon/>}
                            title={'HTML'}
                            text={"Lorem ito at consequatur dicta dolores harum incidunt, itaque magni modi necessitatibus odio officiis perferendis quia quod repellat, similique voluptates."}/>
