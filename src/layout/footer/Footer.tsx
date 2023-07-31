@@ -5,6 +5,7 @@ import {LinkedInIcon} from "../../assets/icons/IconLinkedin";
 import {TelegramIcon} from "../../assets/icons/IconTelegram";
 import {VkIcon} from "../../assets/icons/IconVK";
 import {FlexContainer} from "../../components/FlexContainer";
+import {font} from "../../styles/Common";
 import {theme} from "../../styles/Theme";
 
 export const Footer = () => {
@@ -46,10 +47,14 @@ const StyledFooter = styled.footer`
   padding: 40px 0;
 `
 const Name = styled.span`
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
+  ${font({
+    family:" 'Josefin Sans', sans-serif",
+    weight: 700,
+    fMax: 22,
+    fMin: 16
+  })}
   letter-spacing: 3px;
+  
 
 `
 const SocialList = styled.ul`
