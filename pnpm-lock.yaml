@@ -125,6 +125,9 @@ dependencies:
   react:
     specifier: 18.2.0
     version: 18.2.0
+  react-alice-carousel:
+    specifier: ^2.7.1
+    version: 2.7.1(react@18.2.0)
   react-app-polyfill:
     specifier: 3.0.0
     version: 3.0.0
@@ -8303,6 +8306,15 @@ packages:
       unpipe: 1.0.0
     dev: false
 
+  /react-alice-carousel@2.7.1(react@18.2.0):
+    resolution: {integrity: sha512-8ljKi5y+eqlsRkO4qRxEXIP0067w/4zvZvpJ66w+eAbeF0hIgC3iLeSmVtNc+F6ISzFsEJX0cOx7jIawXs0G8A==}
+    peerDependencies:
+      react: '>=15.4'
+    dependencies:
+      react: 18.2.0
+      vanilla-swipe: 2.4.1
+    dev: false
+
   /react-app-polyfill@3.0.0:
     resolution: {integrity: sha512-sZ41cxiU5llIB003yxxQBYrARBqe0repqPTTYBTmMqTz9szeBbE37BehCE891NZsmdZqqP+xWKdT3eo3vOzN8w==}
     engines: {node: '>=14'}
@@ -9672,6 +9684,10 @@ packages:
       '@types/istanbul-lib-coverage': 2.0.4
       convert-source-map: 1.9.0
       source-map: 0.7.4
+    dev: false
+
+  /vanilla-swipe@2.4.1:
+    resolution: {integrity: sha512-o6pfI0dipet88ZnPLV4Jx04Ia+U3xANh14vhROW2TOe/mrwk2JGG68+Z0BPoD1YUcQQEnK4SZBXkqFe+K1l7/w==}
     dev: false
 
   /vary@1.1.2:
