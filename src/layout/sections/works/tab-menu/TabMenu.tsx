@@ -1,20 +1,24 @@
 import React from 'react';
 import styled from "styled-components";
 import {Link} from "../../../../components/Link";
+import {StatusTabsItemsType, TabsItemsType} from "../Works";
 
 
 type MenuPropsType = {
-    menuItems: string[]
+    tabsItems: TabsItemsType[]
+    curentFilterStatus: StatusTabsItemsType
+    changeFilterStatus: (value: StatusTabsItemsType)=>void
 }
 
-export const TabMenu = ({menuItems}: MenuPropsType) => {
+export const TabMenu = (props: MenuPropsType) => {
+    const {tabsItems, changeFilterStatus, curentFilterStatus} = props
     return (
         <StyledMenu>
             <ul>
-                {menuItems.map((el, i) => {
+                {tabsItems.map((el, i) => {
                     return (
                         <ListItem key={i}>
-                            <Link href="">{el}</Link>
+                            <Link active={curentFilterStatus === el.status} as={'button'} onClick={()=>changeFilterStatus(el.status)}>{el.title}</Link>
                         </ListItem>
                     )
                 })}
@@ -23,7 +27,7 @@ export const TabMenu = ({menuItems}: MenuPropsType) => {
     );
 };
 const StyledMenu = styled.nav`
-  
+
 
   ul {
     display: flex;

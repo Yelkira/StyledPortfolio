@@ -5,7 +5,8 @@ export const theme = {
         accentColor: "#7572D5",
         font: "#FFF",
         border: '#4a4a4a',
-        placeholder: '#495057'
+        placeholder: '#495057',
+        sliderDot: '#FFFFFF7F'
     },
     media:{
       tablet: 'screen and (max-width: 768px)',
