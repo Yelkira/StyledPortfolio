@@ -3,6 +3,7 @@ import {theme} from "../../../styles/Theme";
 //Skills
 
 const StyledSkills = styled.section`
+    position: relative;
 `
 //Skill
 const StyledSkill = styled.div`

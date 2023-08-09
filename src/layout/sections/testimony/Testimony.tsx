@@ -23,6 +23,7 @@ export const Testimony = () => {
 };
 
 const StyledTestimony = styled.section`
+  position: relative;
   background-color: #6a9bf5;
   min-height: 50vh;
 

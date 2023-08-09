@@ -19,4 +19,5 @@ export const Slogan = () => {
 };
 
 const StyledSlogan = styled.section`
+    position: relative;
 `

@@ -6,6 +6,7 @@ import {theme} from "../../../styles/Theme";
 
 //Works
 const StyledWorks = styled.section`
+  position: relative;
   ${FlexContainer}{
     gap: 30px;
   }
