@@ -21,7 +21,10 @@ const MainTitle = styled.h1`
     weight: 400,
     fMax: 27,
     fMin: 20,
-})}
+  })};
+  p{
+    display: none;
+  }
 `
 const Name = styled.h2`
   ${font({
