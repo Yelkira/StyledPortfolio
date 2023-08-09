@@ -4,6 +4,7 @@ import photo from '../../../assets/images/portrait 1.png'
 import {Container} from "../../../components/Container";
 import {FlexContainer} from "../../../components/FlexContainer";
 import {S} from "./Main_styles";
+import Tilt from 'react-parallax-tilt';
 
 
 export const Main = () => {
@@ -26,9 +27,17 @@ export const Main = () => {
                             />}
                         </S.MainTitle>
                     </div>
-                    <S.PhotoWrapper>
-                        <S.Photo src={photo} alt="My photo"/>
-                    </S.PhotoWrapper>
+                    <Tilt className="parallax-effect-img"
+                          tiltMaxAngleX={40}
+                          tiltMaxAngleY={40}
+                          perspective={800}
+                          transitionSpeed={2000}
+                          scale={1.1}
+                          gyroscope={true}>
+                        <S.PhotoWrapper>
+                            <S.Photo src={photo} alt="My photo"/>
+                        </S.PhotoWrapper>
+                    </Tilt>
                 </FlexContainer>
             </Container>
         </S.StyledMain>
