@@ -1,20 +1,32 @@
 import React from 'react';
 import {S} from "../HeaderMenu_styles";
 
-type MenuPropsType = {
-    menuItems: string[]
-}
-export const Menu = ({menuItems}: MenuPropsType) => {
+
+const items = [
+    {title: "Home", id: 'home'},
+    {title: "Skills", id: 'skills'},
+    {title: "Works", id: 'works'},
+    {title: "Testimony", id: 'testimony'},
+    {title: "Contact", id: 'contact'},
+]
+
+export const Menu = () => {
     return (
         <ul>
-            {menuItems.map((el, i) => {
+            {items.map((el, i) => {
                 return (
                     <S.MenuItem key={i}>
-                        <S.Link href="">
-                            {el}
-                            <S.Mask><span>{el}</span></S.Mask>
-                            <S.Mask><span>{el}</span></S.Mask>
-                        </S.Link>
+                        <S.NavLink
+                            activeClass='active'
+                            to={el.id}
+                            smooth={true}
+                            spy={true}
+                            offset={1}
+                            >
+                            {el.title}
+                            <S.Mask><span>{el.title}</span></S.Mask>
+                            <S.Mask><span>{el.title}</span></S.Mask>
+                        </S.NavLink>
                     </S.MenuItem>
                 )
             })}

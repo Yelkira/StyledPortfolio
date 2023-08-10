@@ -3,11 +3,8 @@ import {S} from "../HeaderMenu_styles";
 import {Menu} from "../menu/Menu";
 
 
-type MenuPropsType = {
-    menuItems: string[],
-}
 
-export const MobileMenu = ({menuItems}: MenuPropsType) => {
+export const MobileMenu = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
     const popUpHandler = () => setIsOpen(!isOpen)
     return (
@@ -17,7 +14,7 @@ export const MobileMenu = ({menuItems}: MenuPropsType) => {
                 </span>
             </S.BurgerButton>
             <S.MobileMenuPopup onClick={popUpHandler} isOpen={isOpen}>
-                <Menu menuItems={menuItems}/>
+                <Menu/>
             </S.MobileMenuPopup>
         </S.StyledMobileMenu>
     );

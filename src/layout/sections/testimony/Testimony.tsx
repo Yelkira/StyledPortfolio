@@ -8,7 +8,7 @@ import {Slider} from "../../../components/slider/Slider";
 import {S} from '../skills/Skills_styles'
 export const Testimony = () => {
     return (
-        <StyledTestimony>
+        <StyledTestimony id={'testimony'}>
             <Container>
                 <SectionTitle>Testimony</SectionTitle>
                 <FlexContainer direction={'column'} align={'center'}>

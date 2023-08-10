@@ -42,7 +42,7 @@ const skills = [
 
 export const Skills = () => {
     return (
-        <S.StyledSkills>
+        <S.StyledSkills id={'skills'}>
             <Container>
                 <SectionTitle>
                     My skills
