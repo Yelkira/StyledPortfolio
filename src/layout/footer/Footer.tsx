@@ -7,10 +7,10 @@ import {FlexContainer} from "../../components/FlexContainer";
 import {S} from "./Footer_styles";
 
 const socialIcons = [
-    {icon: <InstaIcon/>},
-    {icon: <TelegramIcon/>},
-    {icon: <VkIcon/>},
-    {icon: <LinkedInIcon/>},
+    {icon: <InstaIcon/>, id:1},
+    {icon: <TelegramIcon/>, id:2},
+    {icon: <VkIcon/>, id:3},
+    {icon: <LinkedInIcon/>, id:4},
 ]
 
 export const Footer = () => {
@@ -22,7 +22,7 @@ export const Footer = () => {
 
                     {socialIcons.map((s) => {
                         return (
-                            <S.SocialItem>
+                            <S.SocialItem key={s.id}>
                                 <S.SocialIconLink>
                                     {s.icon}
                                 </S.SocialIconLink>

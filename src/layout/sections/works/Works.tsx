@@ -1,3 +1,4 @@
+import {AnimatePresence, motion} from "framer-motion"
 import React, {useState} from 'react';
 import socialPhoto from '../../../assets/images/socialNetwork.jpg'
 import timerPhoto from '../../../assets/images/timer.png'
@@ -31,13 +32,15 @@ const works = [
         title: "Social Network",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque corporis dicta, dolore dolores excepturi ipsum labore minus neque obcaecati, placeat quam quidem, repellat soluta totam ullam ut veritatis! Esse?",
         image: socialPhoto,
-        type: 'spa'
+        type: 'spa',
+        id: 1
     },
     {
         title: "Timer",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque corporis dicta, dolore dolores excepturi ipsum labore minus neque obcaecati, placeat quam quidem, repellat soluta totam ullam ut veritatis! Esse?",
         image: timerPhoto,
-        type: 'react'
+        type: 'react',
+        id: 2
     }
 ];
 export const Works = () => {
@@ -64,17 +67,27 @@ export const Works = () => {
                 <TabMenu
                     tabsItems={tabsItems}
                     changeFilterStatus={changeFilterStatus}
-                    curentFilterStatus = {currentFilterStatus}
+                    curentFilterStatus={currentFilterStatus}
                 />
                 <FlexContainer justify={'space-between'} align={'flex-start'} wrap={'wrap'}>
-                    {filteredWorks.map((work, index) => (
-                        <Work
-                            key={index}
-                            title={work.title}
-                            text={work.text}
-                            image={work.image}
-                        />
-                    ))}
+                    <AnimatePresence>
+                        {filteredWorks.map((work) => (
+                            <motion.div
+                                style={{width: '330px ',flexGrow: '1', maxWidth:'540px'}}
+                                layout={true}
+                                initial={{opacity: 0}}
+                                animate={{opacity: 1}}
+                                exit={{opacity: 0}}
+                                key={work.id}>
+                                <Work
+                                    key={work.id}
+                                    title={work.title}
+                                    text={work.text}
+                                    image={work.image}
+                                />
+                            </motion.div>
+                        ))}
+                    </AnimatePresence>
                 </FlexContainer>
             </Container>
         </S.StyledWorks>
