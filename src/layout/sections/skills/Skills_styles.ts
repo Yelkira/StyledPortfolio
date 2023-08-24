@@ -1,11 +1,9 @@
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
-//Skills
 
 const StyledSkills = styled.section`
     position: relative;
 `
-//Skill
 const StyledSkill = styled.div`
   width: 330px;
   padding: 62px 20px 40px;
