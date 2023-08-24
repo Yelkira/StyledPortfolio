@@ -1,4 +1,5 @@
 import React from 'react';
+import {Fade} from "react-awesome-reveal";
 import {CssIcon} from "../../../assets/icons/IconCSS";
 import {HtmlIcon} from "../../../assets/icons/IconHtml";
 import {Container} from "../../../components/Container";
@@ -42,15 +43,18 @@ const skills = [
 
 export const Skills = () => {
     return (
+
         <S.StyledSkills id={'skills'}>
             <Container>
                 <SectionTitle>
                     My skills
                 </SectionTitle>
                 <FlexContainer wrap={'wrap'} justify={'space-between'}>
-                    {skills.map((skill, index) => (
-                        <Skill key={index} Icon={skill.Icon} title={skill.title} text={skill.text}/>
-                    ))}
+                    <Fade cascade damping={0.05} triggerOnce>
+                        {skills.map((skill, index) => (
+                            <Skill key={index} Icon={skill.Icon} title={skill.title} text={skill.text}/>
+                        ))}
+                    </Fade>
                 </FlexContainer>
             </Container>
         </S.StyledSkills>
