@@ -27,8 +27,6 @@ export const TabMenu = (props: MenuPropsType) => {
     );
 };
 const StyledMenu = styled.nav`
-
-
   ul {
     display: flex;
     justify-content: space-between;

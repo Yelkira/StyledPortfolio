@@ -8,7 +8,6 @@ import {TabMenu} from "./tab-menu/TabMenu";
 import {Work} from "./work/Work";
 import {S} from './Works_styles'
 
-//const items = ['All', 'Landing page', 'React', 'SPA']
 export type StatusTabsItemsType = 'all' | 'landing' | 'react' | 'spa'
 export type TabsItemsType = {
     title: string,

@@ -25,7 +25,7 @@ const SocialList = styled.ul`
 `
 const SocialItem = styled.li``
 const SocialIconLink = styled.a`
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: ${theme.colors.footerIconColor};
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -33,6 +33,8 @@ const SocialIconLink = styled.a`
   justify-content: center;
   align-items: center;
   color: ${theme.colors.accentColor};
+  transition: ${theme.animations.transition};
+  
 
   &:hover {
     color: ${theme.colors.primaryBg};
