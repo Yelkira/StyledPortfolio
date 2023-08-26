@@ -4,6 +4,9 @@ import {theme} from "../../../styles/Theme";
 
 const StyledMain = styled.section`
   min-height: 100vh;
+  @media ${theme.media.mobile} {
+    min-height: 75vh;
+  }
 `
 
 const Photo = styled.img`
@@ -15,6 +18,9 @@ const Photo = styled.img`
     width: 310px;
     height: 380px;
   }
+`
+const  TextWrapper = styled.div`
+margin-top: 25px;
 `
 const MainTitle = styled.h1`
   ${font({
@@ -89,6 +95,7 @@ export const S = {
     MainTitle,
     Name,
     SmallText,
-    PhotoWrapper
+    PhotoWrapper,
+    TextWrapper
 
 }

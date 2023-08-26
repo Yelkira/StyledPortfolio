@@ -12,7 +12,7 @@ export const Main = () => {
         <S.StyledMain id={'home'}>
             <Container>
                 <FlexContainer wrap={"wrap"} align={"center"} justify={"space-around"}>
-                    <div>
+                    <S.TextWrapper>
                         <S.SmallText>Hi There</S.SmallText>
                         <S.Name>I am <span>Super Toxic</span></S.Name>
                         <S.MainTitle>
@@ -26,7 +26,7 @@ export const Main = () => {
                                 }}
                             />}
                         </S.MainTitle>
-                    </div>
+                    </S.TextWrapper>
                     <Tilt className="parallax-effect-img"
                           tiltMaxAngleX={40}
                           tiltMaxAngleY={40}
