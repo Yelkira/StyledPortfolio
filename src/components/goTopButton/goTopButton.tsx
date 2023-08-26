@@ -35,7 +35,7 @@ const StyledGoTopButton = styled.button`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color: #333333;
+  color: ${theme.colors.accentColor};
 
   &:hover {
     color: white;
