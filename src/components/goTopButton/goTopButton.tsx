@@ -27,13 +27,13 @@ export const GoTopButton = () => {
     );
 };
 const StyledGoTopButton = styled.button`
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 8px;
   position: fixed;
   right: 30px;
   bottom: 30px;
   &:hover{
     transform: translateY(-4px);
-    background-color: rgba(20, 20, 20, 0.3);
+    background-color: rgba(20, 20, 20);
   }
 `

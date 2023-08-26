@@ -22,11 +22,11 @@ export const IconWrapper = styled.div`
     width: 80px;
     height: 80px;
     transform: rotate(45deg) translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: ${theme.colors.iconColor};
     left: 50%;
     top: 50%;
     transform-origin: top left;
-    
+
 
     position: absolute;
     z-index: -1;

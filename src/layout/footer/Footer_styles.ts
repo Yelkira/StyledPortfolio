@@ -25,7 +25,7 @@ const SocialList = styled.ul`
 `
 const SocialItem = styled.li``
 const SocialIconLink = styled.a`
-  background-color: ${theme.colors.footerIconColor};
+  background-color: ${theme.colors.iconColor};
   border-radius: 50%;
   width: 35px;
   height: 35px;

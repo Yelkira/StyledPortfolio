@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
 export const Button = styled.button`
-font-weight: 400;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -10,15 +10,17 @@ font-weight: 400;
   height: 32px;
   position: relative;
   z-index: 0;
-  &:hover{
-    &::before{
+
+  &:hover {
+    color: ${theme.colors.primaryBg};
+    &::before {
       height: 100%;
       width: 100%;
       z-index: -1;
     }
   }
-  
-  &::before{
+
+  &::before {
     content: '';
     display: inline-block;
     height: 10px;

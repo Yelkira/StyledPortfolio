@@ -13,16 +13,17 @@
     height: 7px;
     transition: 0.2s ease-in-out;
     border-radius: 20px;
-    background-color: #FFFFFF7F;
+    background-color: #333333;
 }
 .alice-carousel__dots-item:not(.__custom):not(:last-child){
     margin-right: 5px;
 }
 .alice-carousel__dots-item:not(.__custom):not(.__active):hover{
     transform: translateX(-1px);
+    background-color: #E63946;
 }
 .alice-carousel__dots-item:not(.__custom).__active{
-    background-color: #7572D5;
+    background-color: #E63946;
     width: 20px;
     cursor: auto;
 }

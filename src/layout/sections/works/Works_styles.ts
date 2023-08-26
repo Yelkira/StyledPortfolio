@@ -41,6 +41,7 @@ const ImageWrapper = styled.div`
     transform: translate(-50%, -20%);
     z-index: 0;
     transition: ${theme.animations.transition};
+    color:#fff;
 
     &::before {
       width: 100%;
