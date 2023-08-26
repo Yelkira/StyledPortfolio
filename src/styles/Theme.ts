@@ -4,7 +4,6 @@ export const theme = {
         secondaryBg: "#fffaf6",
         accentColor: "#E63946",
         iconColor:"#fff2e8",
-        footerIconColor: 'rgba(255, 255, 255, 0.1)',
         mobileMenuPopUpBgColor: '#1F1F20E5',
         font: "#333333",
         border: '#4a4a4a',

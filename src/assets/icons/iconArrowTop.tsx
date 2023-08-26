@@ -8,7 +8,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
         fill="none"
         {...props}
     >
-        <path fill="#fff" d="M7 4v11h2V4l5 5 2-1-8-8-8 8 2 1 5-5Z" />
+        <path fill="currentColor" d="M7 4v11h2V4l5 5 2-1-8-8-8 8 2 1 5-5Z" />
     </svg>
 )
 export const ArrowTop = memo(SvgComponent)
