@@ -26,12 +26,16 @@ export const Contacts = () => {
         axios.post('https://express-mailer-iqyn4xcgd-yelkira.vercel.app/sendMessage', {
             name,
             subj,
-            message,
+            message
         })
             .then(() => {
                 toast.info('Сообщение отправлено. Ответ обязательно дойдёт до отправителя. Спасибо за уделённое время)')
                 clear(e)
             })
+            .catch((error) => {
+                console.error('Error sending message:', error);
+                toast.error('Ошибка при отправке сообщения');
+            });
     }
     return (
         <S.StyledContacts id={'contact'}>
