@@ -1,6 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import photo from '../../../assets/images/portrait 1.png'
+import photo from '../../../assets/images/coolPhoto.png'
 import {Container} from "../../../components/Container";
 import {FlexContainer} from "../../../components/FlexContainer";
 import {S} from "./Main_styles";
@@ -14,7 +14,7 @@ export const Main = () => {
                 <FlexContainer wrap={"wrap"} align={"center"} justify={"space-around"}>
                     <S.TextWrapper>
                         <S.SmallText>Hi There</S.SmallText>
-                        <S.Name>I am <span>Super Toxic</span></S.Name>
+                        <S.Name>I am <span>Alexey Smertin</span></S.Name>
                         <S.MainTitle>
                             <p>A Frontend Developer.</p>
                             {<Typewriter
@@ -27,21 +27,23 @@ export const Main = () => {
                             />}
                         </S.MainTitle>
                     </S.TextWrapper>
-                    <Tilt className="parallax-effect-img"
-                          tiltMaxAngleX={40}
-                          tiltMaxAngleY={40}
-                          perspective={800}
-                          transitionSpeed={2000}
-                          scale={1.1}
-                          gyroscope={true}>
+
                         <S.PhotoWrapper>
                             <S.Photo src={photo} alt="My photo"/>
                         </S.PhotoWrapper>
-                    </Tilt>
+
                 </FlexContainer>
             </Container>
         </S.StyledMain>
     );
 };
 
-//A Web Developer
+/*
+<Tilt className="parallax-effect-img"
+      tiltMaxAngleX={40}
+      tiltMaxAngleY={40}
+      perspective={800}
+      transitionSpeed={2000}
+      scale={1.1}
+      gyroscope={true}>
+</Tilt>*/
