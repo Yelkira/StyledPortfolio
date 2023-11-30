@@ -5,6 +5,7 @@ import {Container} from "../../../components/Container";
 import {FlexContainer} from "../../../components/FlexContainer";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Slider} from "../../../components/slider/Slider";
+import {theme} from "../../../styles/Theme";
 import {S} from '../skills/Skills_styles'
 export const Testimony = () => {
     return (
@@ -29,5 +30,6 @@ const StyledTestimony = styled.section`
 
   ${S.IconWrapper} {
     margin: 40px 0 72px;
+    color: ${theme.colors.accentColor};
   }
 `
