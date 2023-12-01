@@ -5,11 +5,10 @@ import {S} from "../Skills_styles";
 type SkillPropsType = {
     Icon: ReactNode
     title: string
-    text: string
 }
 
 
-export const Skill = ({Icon, title, text}: SkillPropsType) => {
+export const Skill = ({Icon, title}: SkillPropsType) => {
     return (
         <S.StyledSkill>
             <FlexContainer direction={'column'} align={'center'}>
@@ -17,7 +16,6 @@ export const Skill = ({Icon, title, text}: SkillPropsType) => {
                     {Icon}
                 </S.IconWrapper>
                 <S.SkillTitle>{title}</S.SkillTitle>
-                <S.SkillText>{text}</S.SkillText>
             </FlexContainer>
         </S.StyledSkill>
     );

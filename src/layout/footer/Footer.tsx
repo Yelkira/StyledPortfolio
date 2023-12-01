@@ -17,7 +17,7 @@ export const Footer = () => {
     return (
         <S.StyledFooter>
             <FlexContainer direction={'column'} align={'center'}>
-                <S.Name>Savemorbor</S.Name>
+                <S.Name>Alexey Smertin</S.Name>
                 <S.SocialList>
 
                     {socialIcons.map((s) => {
@@ -29,7 +29,7 @@ export const Footer = () => {
                             </S.SocialItem>)
                     })}
                 </S.SocialList>
-                <S.Copyright>© 2023 Savemorbor Diablo, All Rights Reserved.</S.Copyright>
+                <S.Copyright>© 2023 Alexey Smertin, All Rights Reserved(not really).</S.Copyright>
             </FlexContainer>
         </S.StyledFooter>
     )

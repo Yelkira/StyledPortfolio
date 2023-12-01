@@ -15,6 +15,7 @@ const StyledSkill = styled.div`
 export const IconWrapper = styled.div`
   position: relative;
   z-index: 1;
+  color: ${theme.colors.accentColor};
 
   &::before {
     content: '';
