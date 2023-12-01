@@ -1,7 +1,9 @@
 import {AnimatePresence, motion} from "framer-motion"
 import React, {useState} from 'react';
-import socialPhoto from '../../../assets/images/socialNetwork.jpg'
-import timerPhoto from '../../../assets/images/timer.png'
+import cardsPhoto from '../../../assets/images/cardsPNG.png'
+import clientsPhoto from '../../../assets/images/clientsPNG.png'
+import lofthousePhoto from '../../../assets/images/loftHouse.png'
+import portfolioPhoto from '../../../assets/images/Portfolio.png'
 import {Container} from "../../../components/Container";
 import {FlexContainer} from "../../../components/FlexContainer";
 import {SectionTitle} from "../../../components/SectionTitle";
@@ -20,28 +22,40 @@ const tabsItems: TabsItemsType[] = [{
 }, {
     title: 'Landing page',
     status: 'landing',
-}, {
-    title: 'React',
-    status: 'react',
-}, {
-    title: 'SPA',
-    status: 'spa',
-}]
+},
+    {
+        title: 'SPA',
+        status: 'spa',
+    }]
 const works = [
     {
-        title: "Social Network",
+        title: "Cards!",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque corporis dicta, dolore dolores excepturi ipsum labore minus neque obcaecati, placeat quam quidem, repellat soluta totam ullam ut veritatis! Esse?",
-        image: socialPhoto,
+        image: cardsPhoto,
         type: 'spa',
         id: 1
     },
     {
-        title: "Timer",
+        title: "Clients",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque corporis dicta, dolore dolores excepturi ipsum labore minus neque obcaecati, placeat quam quidem, repellat soluta totam ullam ut veritatis! Esse?",
-        image: timerPhoto,
-        type: 'react',
+        image: clientsPhoto,
+        type: 'spa',
         id: 2
-    }
+    },
+    {
+        title: "LoftHouse",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque corporis dicta, dolore dolores excepturi ipsum labore minus neque obcaecati, placeat quam quidem, repellat soluta totam ullam ut veritatis! Esse?",
+        image: lofthousePhoto,
+        type: 'landing',
+        id: 3
+    },
+    {
+        title: "Portfolio",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque corporis dicta, dolore dolores excepturi ipsum labore minus neque obcaecati, placeat quam quidem, repellat soluta totam ullam ut veritatis! Esse?",
+        image: portfolioPhoto,
+        type: 'landing',
+        id: 4
+    },
 ];
 export const Works = () => {
     const [currentFilterStatus, setCurrentFilterStatus] = useState<StatusTabsItemsType>('all');
@@ -73,7 +87,7 @@ export const Works = () => {
                     <AnimatePresence>
                         {filteredWorks.map((work) => (
                             <motion.div
-                                style={{width: '330px ',flexGrow: '1', maxWidth:'540px'}}
+                                style={{width: '330px ', flexGrow: '0', minWidth: '540px'}}
                                 layout={true}
                                 initial={{opacity: 0}}
                                 animate={{opacity: 1}}
