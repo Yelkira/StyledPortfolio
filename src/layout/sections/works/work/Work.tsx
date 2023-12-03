@@ -7,25 +7,31 @@ type WorkPropsType = {
     text: string
     title: string
     image: string
+    hrefDemo: string
+    hrefCode: string
 }
 
 
 export const Work = (props: WorkPropsType) => {
+    const {text, title, image, hrefDemo, hrefCode} = props
     return (
         <S.StyledWork>
             <S.ImageWrapper>
-                <S.Image src={props.image} alt=""/>
-                <Button>view project</Button>
+                <S.Image src={image} alt=""/>
+                <span>{title}</span>
+                <a href={ hrefDemo} target={ "_blank"}>
+                <Button >view project</Button>
+                </a>
             </S.ImageWrapper>
             <S.Description>
                 <S.Title>
-                    {props.title}
+                    {title}
                 </S.Title>
                 <S.Text>
-                    {props.text}
+                    {text}
                 </S.Text>
-                <Link>demo</Link>
-                <Link>code</Link>
+                <Link href={hrefDemo} target="_blank">demo</Link>
+                <Link href={hrefCode} target="_blank">code</Link>
             </S.Description>
         </S.StyledWork>
     );

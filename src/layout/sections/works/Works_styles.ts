@@ -32,7 +32,19 @@ const StyledWork = styled.div`
 `
 const ImageWrapper = styled.div`
   position: relative;
-
+  span{
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+    transition: ${theme.animations.transition};
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 900;
+  }
   ${Button} {
     opacity: 0;
     position: absolute;
@@ -71,6 +83,10 @@ const ImageWrapper = styled.div`
     ${Button} {
       opacity: 1;
       transform: translate(-50%, -50%);
+    }
+    span{
+      opacity: 1;
+      transform: translate(-50%, -20%);
     }
   }
 

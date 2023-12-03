@@ -4,6 +4,7 @@ import cardsPhoto from '../../../assets/images/cardsPNG.png'
 import clientsPhoto from '../../../assets/images/clientsPNG.png'
 import lofthousePhoto from '../../../assets/images/loftHouse.png'
 import portfolioPhoto from '../../../assets/images/Portfolio.png'
+import nikePhoto from '../../../assets/images/nike.png'
 import {Container} from "../../../components/Container";
 import {FlexContainer} from "../../../components/FlexContainer";
 import {SectionTitle} from "../../../components/SectionTitle";
@@ -30,31 +31,48 @@ const tabsItems: TabsItemsType[] = [{
 const works = [
     {
         title: "Cards!",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque corporis dicta, dolore dolores excepturi ipsum labore minus neque obcaecati, placeat quam quidem, repellat soluta totam ullam ut veritatis! Esse?",
+        text: "Cards is a powerful flashcard app. It provides a user-friendly interface for creating, organizing, and studying flashcard decks, enhancing the learning experience. Cards is the ultimate tool for effective studying.",
         image: cardsPhoto,
+        hrefDemo: 'https://saturday-one.vercel.app/login',
+        hrefCode: 'https://github.com/Yelkira/Cards',
         type: 'spa',
         id: 1
     },
     {
         title: "Clients",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque corporis dicta, dolore dolores excepturi ipsum labore minus neque obcaecati, placeat quam quidem, repellat soluta totam ullam ut veritatis! Esse?",
+        text: "Manage your client database with ease using this JavaScript application. Add and delete clients, along with their contact information, and conveniently search for clients based on their contact details. The user interface is designed to be clean and intuitive, providing a seamless user experience.",
         image: clientsPhoto,
+        hrefDemo: 'https://clients-q8wxlettm-yelkira.vercel.app/',
+        hrefCode: 'https://github.com/Yelkira/Clients',
         type: 'spa',
         id: 2
     },
     {
         title: "LoftHouse",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque corporis dicta, dolore dolores excepturi ipsum labore minus neque obcaecati, placeat quam quidem, repellat soluta totam ullam ut veritatis! Esse?",
+        text: "LoftHouse: A modern web app showcasing a stunning residential complex. Built with JavaScript, HTML, and SCSS, it features an attractive UI to captivate potential residents.",
         image: lofthousePhoto,
+        hrefDemo: 'https://loft-house-glwxtndmj-yelkira.vercel.app/',
+        hrefCode: 'https://github.com/Yelkira/LoftHouse',
         type: 'landing',
         id: 3
     },
     {
         title: "Portfolio",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque corporis dicta, dolore dolores excepturi ipsum labore minus neque obcaecati, placeat quam quidem, repellat soluta totam ullam ut veritatis! Esse?",
+        text: "StyledPortfolio is a contemporary portfolio created using React and Styled Components. Its main objective is to present my projects in an appealing manner and provide a convenient contact form for easy communication.",
         image: portfolioPhoto,
+        hrefDemo: 'https://styled-portfolio-zeta.vercel.app/',
+        hrefCode: 'https://github.com/Yelkira/StyledPortfolio',
         type: 'landing',
         id: 4
+    },
+    {
+        title: "NikeRun",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque corporis dicta, dolore dolores excepturi ipsum labore minus neque obcaecati, placeat quam quidem, repellat soluta totam ullam ut veritatis! Esse?",
+        image: nikePhoto,
+        hrefDemo: 'https://nike-app-ashy.vercel.app/',
+        hrefCode: 'https://github.com/Yelkira/nikeApp',
+        type: 'landing',
+        id: 5
     },
 ];
 export const Works = () => {
@@ -98,6 +116,8 @@ export const Works = () => {
                                     title={work.title}
                                     text={work.text}
                                     image={work.image}
+                                    hrefDemo={work.hrefDemo}
+                                    hrefCode={work.hrefCode}
                                 />
                             </motion.div>
                         ))}
