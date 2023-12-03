@@ -101,11 +101,11 @@ export const Works = () => {
                     changeFilterStatus={changeFilterStatus}
                     curentFilterStatus={currentFilterStatus}
                 />
-                <FlexContainer justify={'space-between'} align={'flex-start'} wrap={'wrap'}>
+                <FlexContainer justify={'center'} align={'flex-start'} wrap={'wrap'}>
                     <AnimatePresence>
                         {filteredWorks.map((work) => (
                             <motion.div
-                                style={{width: '330px ', flexGrow: '0', minWidth: '540px'}}
+                                style={{maxWidth: '540px ', flexGrow: '0'}}
                                 layout={true}
                                 initial={{opacity: 0}}
                                 animate={{opacity: 1}}
