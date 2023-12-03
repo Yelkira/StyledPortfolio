@@ -77,7 +77,7 @@ export const Skills = () => {
                 <SectionTitle>
                     My skills
                 </SectionTitle>
-                <FlexContainer wrap={'wrap'} justify={'space-between'}>
+                <FlexContainer wrap={'wrap'} justify={'center'}>
                     <Fade cascade damping={0.05} triggerOnce>
                         {skills.map((skill, index) => (
                             <Skill key={index} Icon={skill.Icon} title={skill.title} />

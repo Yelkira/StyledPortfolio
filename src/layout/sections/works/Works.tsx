@@ -105,7 +105,7 @@ export const Works = () => {
                     <AnimatePresence>
                         {filteredWorks.map((work) => (
                             <motion.div
-                                style={{maxWidth: '540px ', flexGrow: '0'}}
+                                style={{width: '540px ', flexGrow: '0'}}
                                 layout={true}
                                 initial={{opacity: 0}}
                                 animate={{opacity: 1}}
