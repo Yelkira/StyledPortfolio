@@ -1,8 +1,14 @@
 import styled from "styled-components";
+import {FlexContainer} from "../../../components/FlexContainer";
 import {theme} from "../../../styles/Theme";
 
 const StyledSkills = styled.section`
     position: relative;
+  ${FlexContainer}{
+      @media ${theme.media.desktop}{
+          justify-content: space-between;
+      }
+  }
 `
 const StyledSkill = styled.div`
   width: 330px;

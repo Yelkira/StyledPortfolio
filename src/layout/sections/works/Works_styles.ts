@@ -9,6 +9,9 @@ const StyledWorks = styled.section`
   position: relative;
   ${FlexContainer}{
     gap: 30px;
+    @media ${theme.media.desktop} {
+      justify-content: space-between;
+    }
   }
 `
 
@@ -23,10 +26,10 @@ const StyledWork = styled.div`
       margin-left: 20px;
     }
   }
-
+/*
   @media ${theme.media.desktop} {
     max-width: 540px;
-  }
+  }*/
 `
 const ImageWrapper = styled.div`
   position: relative;
