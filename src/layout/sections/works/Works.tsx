@@ -42,7 +42,7 @@ const works = [
         title: "Clients",
         text: "Manage your client database with ease using this JavaScript application. Add and delete clients, along with their contact information, and conveniently search for clients based on their contact details. The user interface is designed to be clean and intuitive, providing a seamless user experience.",
         image: clientsPhoto,
-        hrefDemo: 'https://clients-q8wxlettm-yelkira.vercel.app/',
+        hrefDemo: 'https://clients-olive.vercel.app/',
         hrefCode: 'https://github.com/Yelkira/Clients',
         type: 'spa',
         id: 2
@@ -51,7 +51,7 @@ const works = [
         title: "LoftHouse",
         text: "LoftHouse: A modern web app showcasing a stunning residential complex. Built with JavaScript, HTML, and SCSS, it features an attractive UI to captivate potential residents.",
         image: lofthousePhoto,
-        hrefDemo: 'https://loft-house-glwxtndmj-yelkira.vercel.app/',
+        hrefDemo: 'https://loft-house.vercel.app/',
         hrefCode: 'https://github.com/Yelkira/LoftHouse',
         type: 'landing',
         id: 3
